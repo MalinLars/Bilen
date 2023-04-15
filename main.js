@@ -16,6 +16,10 @@ class Car{
         console.log(`${this.brand} ${this.model} has maximum speed ${this.maxSpeed}`);
     }
 
+    changing(){
+        console.log(`The car is changing in to a ${this.brand} ${this.model} ${this.year} ${this.colour} that is driving`);
+    }
+
     changeCar(brn, mdml, yer, clr) {
         this.brand = brn;
         this.model = mdml;
@@ -29,5 +33,5 @@ const carClass = new Car ('Volvo', 'V70', 1997, 'gold');
     carClass.driving();
     carClass.speed(120);
     carClass.changeCar('Saab', '900', 1978, 'red');
-    carClass.driving();
+    carClass.changing();
     carClass.speed(150);
